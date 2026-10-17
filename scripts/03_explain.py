@@ -254,7 +254,7 @@ def main():
     print("top sensors overall:", ", ".join(f"{d['sensor']} ({d['symbol']})" for d in gi[:5]))
     print("demo engines:", demo)
     print(fleet.head(5).to_string(index=False))
-    print("next: send outputs/explanations/engine_*.json to the LLM lead, fleet.csv to Member 4")
+
 
 
 if __name__ == "__main__":
