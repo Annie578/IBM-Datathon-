@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "engine_id": 71,
+  "subset": "FD001",
+  "cycles_observed": 68,
+  "predicted_rul_cycles": 110.2,
+  "risk_level": "healthy",
+  "risk_thresholds": {
+    "critical_below_cycles": 30.0,
+    "warning_below_cycles": 60.0
+  },
+  "fleet_rank_most_urgent_first": 75,
+  "fleet_size": 100,
+  "fleet_average_prediction_cycles": 86.6,
+  "engine_age_effect_on_rul_cycles": -5.1,
+  "baseline_cycles_used": 20,
+  "top_drivers": [
+    {
+      "sensor": "s11",
+      "symbol": "Ps30",
+      "description": "Static pressure at HPC outlet",
+      "effect_on_rul_cycles": 7.0,
+      "direction": "lengthens predicted life",
+      "current_value": 47.35,
+      "healthy_baseline_value": 47.283,
+      "deviation_from_baseline": 0.067,
+      "recent_slope_per_cycle": 0.0275
+    },
+    {
+      "sensor": "s4",
+      "symbol": "T50",
+      "description": "Total temperature at LPT outlet",
+      "effect_on_rul_cycles": 5.9,
+      "direction": "lengthens predicted life",
+      "current_value": 1400.97,
+      "healthy_baseline_value": 1398.812,
+      "deviation_from_baseline": 2.158,
+      "recent_slope_per_cycle": 0.6175
+    },
+    {
+      "sensor": "s17",
+      "symbol": "htBleed",
+      "description": "Bleed enthalpy",
+      "effect_on_rul_cycles": 5.2,
+      "direction": "lengthens predicted life",
+      "current_value": 391.0,
+      "healthy_baseline_value": 392.1,
+      "deviation_from_baseline": -1.1,
+      "recent_slope_per_cycle": -0.5
+    },
+    {
+      "sensor": "s3",
+      "symbol": "T30",
+      "description": "Total temperature at HPC outlet",
+      "effect_on_rul_cycles": 4.9,
+      "direction": "lengthens predicted life",
+      "current_value": 1585.45,
+      "healthy_baseline_value": 1585.395,
+      "deviation_from_baseline": 0.055,
+      "recent_slope_per_cycle": -1.4725
+    },
+    {
+      "sensor": "s12",
+      "symbol": "phi",
+      "description": "Ratio of fuel flow to Ps30",
+      "effect_on_rul_cycles": 4.0,
+      "direction": "lengthens predicted life",
+      "current_value": 522.42,
+      "healthy_baseline_value": 522.201,
+      "deviation_from_baseline": 0.219,
+      "recent_slope_per_cycle": -0.0325
+    }
+  ],
+  "model_context": {
+    "model": "XGBoost",
+    "test_rmse_cycles": 11.824,
+    "test_mae_cycles": 8.648,
+    "rul_cap_cycles": 125,
+    "caveat": "Predictions near the cap mean 'at least roughly this many cycles', because the model was trained on RUL capped at that value."
+  }
+}

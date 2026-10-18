@@ -1,0 +1,6 @@
+{
+  "critical": 81,
+  "middle": 11,
+  "healthy": 47,
+  "note": "Chosen only by predicted RUL (lowest, median, highest), not by how accurate the prediction was."
+}

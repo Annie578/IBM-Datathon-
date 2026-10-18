@@ -1,0 +1,104 @@
+[
+  {
+    "sensor": "s11",
+    "symbol": "Ps30",
+    "description": "Static pressure at HPC outlet",
+    "mean_abs_effect_cycles": 6.84
+  },
+  {
+    "sensor": "s4",
+    "symbol": "T50",
+    "description": "Total temperature at LPT outlet",
+    "mean_abs_effect_cycles": 6.21
+  },
+  {
+    "sensor": "s3",
+    "symbol": "T30",
+    "description": "Total temperature at HPC outlet",
+    "mean_abs_effect_cycles": 6.03
+  },
+  {
+    "sensor": "s12",
+    "symbol": "phi",
+    "description": "Ratio of fuel flow to Ps30",
+    "mean_abs_effect_cycles": 3.8
+  },
+  {
+    "sensor": "s9",
+    "symbol": "Nc",
+    "description": "Physical core speed",
+    "mean_abs_effect_cycles": 3.08
+  },
+  {
+    "sensor": "s2",
+    "symbol": "T24",
+    "description": "Total temperature at LPC outlet",
+    "mean_abs_effect_cycles": 2.99
+  },
+  {
+    "sensor": "s7",
+    "symbol": "P30",
+    "description": "Total pressure at HPC outlet",
+    "mean_abs_effect_cycles": 2.98
+  },
+  {
+    "sensor": "s14",
+    "symbol": "NRc",
+    "description": "Corrected core speed",
+    "mean_abs_effect_cycles": 2.55
+  },
+  {
+    "sensor": "s15",
+    "symbol": "BPR",
+    "description": "Bypass ratio",
+    "mean_abs_effect_cycles": 2.43
+  },
+  {
+    "sensor": "s13",
+    "symbol": "NRf",
+    "description": "Corrected fan speed",
+    "mean_abs_effect_cycles": 2.24
+  },
+  {
+    "sensor": "s8",
+    "symbol": "Nf",
+    "description": "Physical fan speed",
+    "mean_abs_effect_cycles": 1.97
+  },
+  {
+    "sensor": "s17",
+    "symbol": "htBleed",
+    "description": "Bleed enthalpy",
+    "mean_abs_effect_cycles": 1.96
+  },
+  {
+    "sensor": "s20",
+    "symbol": "W31",
+    "description": "HPT coolant bleed",
+    "mean_abs_effect_cycles": 1.31
+  },
+  {
+    "sensor": "s21",
+    "symbol": "W32",
+    "description": "LPT coolant bleed",
+    "mean_abs_effect_cycles": 1.23
+  },
+  {
+    "sensor": "s6",
+    "symbol": "P15",
+    "description": "Total pressure in bypass duct",
+    "mean_abs_effect_cycles": 0.54
+  },
+  {
+    "sensor": "op2",
+    "symbol": "Mach",
+    "description": "Operating setting 2 (Mach number)",
+    "mean_abs_effect_cycles": 0.43
+  },
+  {
+    "sensor": "op1",
+    "symbol": "altitude",
+    "description": "Operating setting 1 (altitude)",
+    "mean_abs_effect_cycles": 0.3
+  }
+]

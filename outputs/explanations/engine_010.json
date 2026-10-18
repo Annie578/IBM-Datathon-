@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "engine_id": 10,
+  "subset": "FD001",
+  "cycles_observed": 192,
+  "predicted_rul_cycles": 82.3,
+  "risk_level": "healthy",
+  "risk_thresholds": {
+    "critical_below_cycles": 30.0,
+    "warning_below_cycles": 60.0
+  },
+  "fleet_rank_most_urgent_first": 47,
+  "fleet_size": 100,
+  "fleet_average_prediction_cycles": 86.6,
+  "engine_age_effect_on_rul_cycles": 7.8,
+  "baseline_cycles_used": 20,
+  "top_drivers": [
+    {
+      "sensor": "s11",
+      "symbol": "Ps30",
+      "description": "Static pressure at HPC outlet",
+      "effect_on_rul_cycles": -7.2,
+      "direction": "shortens predicted life",
+      "current_value": 47.59,
+      "healthy_baseline_value": 47.199,
+      "deviation_from_baseline": 0.392,
+      "recent_slope_per_cycle": 0.0225
+    },
+    {
+      "sensor": "s8",
+      "symbol": "Nf",
+      "description": "Physical fan speed",
+      "effect_on_rul_cycles": -5.6,
+      "direction": "shortens predicted life",
+      "current_value": 2388.11,
+      "healthy_baseline_value": 2388.007,
+      "deviation_from_baseline": 0.103,
+      "recent_slope_per_cycle": 0.01
+    },
+    {
+      "sensor": "s4",
+      "symbol": "T50",
+      "description": "Total temperature at LPT outlet",
+      "effect_on_rul_cycles": 4.6,
+      "direction": "lengthens predicted life",
+      "current_value": 1398.99,
+      "healthy_baseline_value": 1396.94,
+      "deviation_from_baseline": 2.05,
+      "recent_slope_per_cycle": -0.15
+    },
+    {
+      "sensor": "s7",
+      "symbol": "P30",
+      "description": "Total pressure at HPC outlet",
+      "effect_on_rul_cycles": -4.3,
+      "direction": "shortens predicted life",
+      "current_value": 552.88,
+      "healthy_baseline_value": 554.393,
+      "deviation_from_baseline": -1.513,
+      "recent_slope_per_cycle": -0.3075
+    },
+    {
+      "sensor": "s13",
+      "symbol": "NRf",
+      "description": "Corrected fan speed",
+      "effect_on_rul_cycles": -3.3,
+      "direction": "shortens predicted life",
+      "current_value": 2388.08,
+      "healthy_baseline_value": 2388.014,
+      "deviation_from_baseline": 0.066,
+      "recent_slope_per_cycle": 0.005
+    }
+  ],
+  "model_context": {
+    "model": "XGBoost",
+    "test_rmse_cycles": 11.824,
+    "test_mae_cycles": 8.648,
+    "rul_cap_cycles": 125,
+    "caveat": "Predictions near the cap mean 'at least roughly this many cycles', because the model was trained on RUL capped at that value."
+  }
+}

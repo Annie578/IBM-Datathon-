@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "engine_id": 21,
+  "subset": "FD001",
+  "cycles_observed": 148,
+  "predicted_rul_cycles": 60.2,
+  "risk_level": "healthy",
+  "risk_thresholds": {
+    "critical_below_cycles": 30.0,
+    "warning_below_cycles": 60.0
+  },
+  "fleet_rank_most_urgent_first": 39,
+  "fleet_size": 100,
+  "fleet_average_prediction_cycles": 86.6,
+  "engine_age_effect_on_rul_cycles": -5.2,
+  "baseline_cycles_used": 20,
+  "top_drivers": [
+    {
+      "sensor": "s9",
+      "symbol": "Nc",
+      "description": "Physical core speed",
+      "effect_on_rul_cycles": -18.8,
+      "direction": "shortens predicted life",
+      "current_value": 9087.25,
+      "healthy_baseline_value": 9049.514,
+      "deviation_from_baseline": 37.736,
+      "recent_slope_per_cycle": 2.1375
+    },
+    {
+      "sensor": "s14",
+      "symbol": "NRc",
+      "description": "Corrected core speed",
+      "effect_on_rul_cycles": -16.5,
+      "direction": "shortens predicted life",
+      "current_value": 8168.51,
+      "healthy_baseline_value": 8133.196,
+      "deviation_from_baseline": 35.314,
+      "recent_slope_per_cycle": 0.195
+    },
+    {
+      "sensor": "s15",
+      "symbol": "BPR",
+      "description": "Bypass ratio",
+      "effect_on_rul_cycles": 3.9,
+      "direction": "lengthens predicted life",
+      "current_value": 8.441,
+      "healthy_baseline_value": 8.408,
+      "deviation_from_baseline": 0.033,
+      "recent_slope_per_cycle": 0.0062
+    },
+    {
+      "sensor": "s3",
+      "symbol": "T30",
+      "description": "Total temperature at HPC outlet",
+      "effect_on_rul_cycles": 3.7,
+      "direction": "lengthens predicted life",
+      "current_value": 1592.32,
+      "healthy_baseline_value": 1585.468,
+      "deviation_from_baseline": 6.852,
+      "recent_slope_per_cycle": -0.52
+    },
+    {
+      "sensor": "s2",
+      "symbol": "T24",
+      "description": "Total temperature at LPC outlet",
+      "effect_on_rul_cycles": 2.5,
+      "direction": "lengthens predicted life",
+      "current_value": 642.66,
+      "healthy_baseline_value": 642.14,
+      "deviation_from_baseline": 0.52,
+      "recent_slope_per_cycle": 0.0525
+    }
+  ],
+  "model_context": {
+    "model": "XGBoost",
+    "test_rmse_cycles": 11.824,
+    "test_mae_cycles": 8.648,
+    "rul_cap_cycles": 125,
+    "caveat": "Predictions near the cap mean 'at least roughly this many cycles', because the model was trained on RUL capped at that value."
+  }
+}

@@ -1,0 +1,19 @@
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets: never commit keys or tokens
+*.pem
+*.key
+id_*
+datathon2026*
+.env
+
+# Data and heavy outputs stay on the VM
+data/raw/
+data/processed/
+models/
+_envcheck.parquet
+setup_failures.txt

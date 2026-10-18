@@ -1,0 +1,29 @@
+{
+  "model": "xgb",
+  "rul_cap": 125,
+  "n_features": 103,
+  "fit_seconds": 18.29,
+  "best_iteration": 1497,
+  "validation_capped": {
+    "rmse": 9.406,
+    "mae": 6.837,
+    "nasa_score": 5458.7
+  },
+  "test_vs_true_rul": {
+    "rmse": 11.824,
+    "mae": 8.648,
+    "nasa_score": 179.1
+  },
+  "test_vs_capped_rul": {
+    "rmse": 10.509,
+    "mae": 7.624,
+    "nasa_score": 152.8
+  },
+  "baseline_predict_mean_vs_true_rul": {
+    "rmse": 42.998,
+    "mae": 35.9,
+    "nasa_score": 32772.2
+  },
+  "test_engines": 100,
+  "note": "test_vs_true_rul is the headline number. NASA score is summed over engines, so it grows with engine count."
+}
